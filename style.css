@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+}
+
+header{
+    grid-area: h;
+    background-color: aqua;
+}
+
+nav{
+    grid-area: n;
+    background-color: turquoise;
+}
+
+main{
+    grid-area: m;
+    background-color: blue;
+}
+
+aside{
+    grid-area: a;
+    background-color: rebeccapurple;
+}
+
+footer{
+    grid-area: f;
+    background-color: blueviolet;
+}
+
+#container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:40% 20% 40%;
+
+    grid-template-areas:
+    
+    "h h m"
+    "a a a"
+    "f . n";
+}
+
+@media screen and (max-width:800px){
+
+    #container{ 
+
+        grid-template-rows: 50% 50% 25% 50% 50%;  
+        grid-template-areas:
+        
+    
+    "h h h"
+    "n n n"
+    "m m m"
+    "a a a"
+    "f f f";
+    }
+}
