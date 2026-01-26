@@ -20,6 +20,13 @@ main{
 aside{
     grid-area: a;
     background-color: rebeccapurple;
+    display:flex;
+    justify-content: space-around;
+}  
+    
+#bbox {
+    margin-top: 17%;
+    justify-content: space-between;
 }
 
 footer{
@@ -30,14 +37,15 @@ footer{
 #container{
     display: grid;
     height: 100%;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows:40% 20% 40%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:100% 100% 100% 100%;
 
     grid-template-areas:
     
-    "h h m"
-    "a a a"
-    "f . n";
+    "n h h h"
+    "m m m m "
+    "a a a a"
+    "f f f f";
 }
 
 @media screen and (max-width:800px){
