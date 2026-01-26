@@ -4,34 +4,36 @@ body{
 
 header{
     grid-area: h;
-    background-color: aqua;
+    background-color: beige;
 }
 
 nav{
     grid-area: n;
-    background-color: turquoise;
+    background-color: white;
 }
 
 main{
     grid-area: m;
-    background-color: blue;
+    background-color: turquoise;
 }
 
 aside{
     grid-area: a;
-    background-color: rebeccapurple;
-    display:flex;
-    justify-content: space-around;
+    background-color: burlywood;
+   
 }  
     
 #bbox {
-    margin-top: 17%;
-    justify-content: space-between;
+    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 footer{
     grid-area: f;
-    background-color: blueviolet;
+    background-color: silver;
 }
 
 #container{
