@@ -5,6 +5,10 @@ body{
 header{
     grid-area: h;
     background-color: beige;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 nav{
@@ -12,19 +16,42 @@ nav{
     background-color: white;
 }
 
+#bigtext{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#smalltext{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;   
+}
+
 main{
     grid-area: m;
     background-color: turquoise;
+    padding: 200px;
+}
+
+#bigtext2{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#smalltext2{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 aside{
     grid-area: a;
     background-color: burlywood;
-   
 }  
     
 #bbox {
-    
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -33,31 +60,37 @@ aside{
 
 footer{
     grid-area: f;
-    background-color: silver;
+    background-color: turquoise;
+    padding: 200px;
 }
 
 #container{
     display: grid;
     height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows:100% 100% 100% 100%;
-
+    grid-template-rows:20% 100% 100% 100%;
     grid-template-areas:
-    
     "n h h h"
-    "m m m m "
+    "m m m m"
     "a a a a"
     "f f f f";
 }
 
 @media screen and (max-width:800px){
 
-    #container{ 
+    
+main{
+    padding: 2px;
+}
 
+
+
+
+
+
+    #container{ 
         grid-template-rows: 50% 50% 25% 50% 50%;  
         grid-template-areas:
-        
-    
     "h h h"
     "n n n"
     "m m m"
