@@ -5,7 +5,6 @@ body{
 header{
     grid-area: h;
     background-color: beige;
-    
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -13,7 +12,7 @@ header{
 
 nav{
     grid-area: n;
-    background-color: white;
+    background-color: beige;
 }
 
 #bigtext{
@@ -33,7 +32,7 @@ a{
 
 main{
     grid-area: m;
-    background-color: turquoise;
+    background-color: white;
     padding: 200px;
 }
 
@@ -48,7 +47,7 @@ main{
 
 aside{
     grid-area: a;
-    background-color: burlywood;
+    background-color: beige;
 }  
     
 #bbox {
@@ -60,7 +59,7 @@ aside{
 
 footer{
     grid-area: f;
-    background-color: turquoise;
+    background-color: white;
     padding: 200px;
 }
 
