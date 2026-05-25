@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min Portfolio</title>
+  <meta name="description" content="Portfolio-webbplats för att visa upp projekt, kunskaper och kontaktuppgifter." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Min<span>Portfolio</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Öppna meny" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav 
+        <ul>
+          <li><a href="#home">Hem</a></li>
+          <li><a href="#about">Om mig</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#skills">Kunskaper</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-btn" id="themeBtn" aria-label="Byt färgtema">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Webbutvecklare / Student</p>
+          <h1>Hej, jag heter <span>Melker Fyhr</span></h1>
+          <p class="lead">
+            Jag bygger moderna, responsiva och användarvänliga webbplatser med HTML, CSS och JavaScript.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Se mina projekt</a>
+            <a href="#contact" class="btn btn-secondary">Kontakta mig</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Snabbfakta</h2>
+          <ul>
+            <li>Studerar webbutveckling</li>
+            <li>Fokus på responsiv design</li>
+            <li>Intresse för UX och tillgänglighet</li>
+            <li>Bygger projekt med ren kod</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Om mig</p>
+          <h2>Vem jag är</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>Bakgrund</h3>
+            <p>
+              Jag är en studerande inom webbutveckling som tycker om att skapa snygga,
+              funktionella och lättanvända webbplatser. Jag gillar att arbeta med både
+              design och kod.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Mål</h3>
+            <p>
+              Mitt mål är att utveckla webbplatser som fungerar bra på både mobil,
+              surfplatta och dator, samtidigt som de är tillgängliga och snabba.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Arbetssätt</h3>
+            <p>
+              Jag arbetar strukturerat med planering, wireframes, testning och förbättring
+              för att nå ett bra slutresultat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Projekt</p>
+          <h2>Mina senaste arbeten</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top"></div>
+            <div class="project-body">
+              <h3>Portfolio-sida</h3>
+              <p>
+                En personlig portfolio med responsiv layout, moderna färger och fokus på tillgänglighet.
+              </p>
+              <span class="badge">HTML / CSS / JS</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"></div>
+            <div class="project-body">
+              <h3>Todo-app</h3>
+              <p>
+                En enkel att-göra-lista med localStorage där användaren kan lägga till och ta bort uppgifter.
+              </p>
+              <span class="badge">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"></div>
+            <div class="project-body">
+              <h3>Restaurangsida</h3>
+              <p>
+                En stilren webbplats med meny, öppettider, kontaktinformation och mobilanpassning.
+              </p>
+              <span class="badge">Responsive Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Kunskaper</p>
+          <h2>Det här arbetar jag med</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>HTML5</h3>
+            <p>Semantisk struktur och tydlig uppbyggnad.</p>
+          </div>
+          <div class="skill-card">
+            <h3>CSS3</h3>
+            <p>Responsiv design, Flexbox, Grid och animationer.</p>
+          </div>
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Interaktivitet, formulärvalidering och dynamiska funktioner.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tillgänglighet</h3>
+            <p>Kontrast, struktur, alt-texter och användbarhet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Kontakt</p>
+          <h2>Kontakta mig</h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info card">
+            <h3>Kontaktuppgifter</h3>
+            <p><strong>Namn:</strong> Förnamn Efternamn</p>
+            <p><strong>E-post:</strong> dinmail@example.com</p>
+            <p><strong>Ort:</strong> Din stad</p>
+            <p>
+              Du kan använda formuläret bredvid för att skicka ett meddelande.
+            </p>
+          </div>
+
+          <form class="contact-form card" id="contactForm" novalidate>
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="Skriv ditt namn" required />
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" placeholder="Skriv din e-post" required />
+
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="6" placeholder="Skriv ditt meddelande" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Skicka meddelande</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Melker kingen är coolast</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

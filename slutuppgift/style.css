@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  background-color: aqua;
+}
+
+header {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.theme-btn {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+main {
+  width: 30%;
+}
+
+h1 {
+  width: 300px;
+}
+
+h4 {
+  width: 300px;
+}
+
+.school-box {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+
+aside {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+
+.contact-box {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: #333;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode aside,
+.dark-mode .school-box,
+.dark-mode .contact-box,
+.dark-mode .contact-btn,
+.dark-mode .project-btn,
+.dark-mode .theme-btn {
+  border-color: white;
+  color: white;
+  background-color: #333;
+}
+
+.blink {
+  animation: blinka 0.5s infinite;
+}
+
+@keyframes blinka {
+  0% {
+    background-color: white;
+    color: black;
+  }
+
+  50% {
+    background-color: black;
+    color: white;
+  }
+
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
